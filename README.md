@@ -135,7 +135,14 @@ warmup_iters = 100 # not super necessary potentially
 
 ![img.png](markdown图片/结果图.png)
 # 思考题
-## 1训练文件参数含义与修改实验
+## 1使用《天龙八部》数据集训练一个GPT模形，并生成结果
+其过程与训练唐诗数据集的步骤一致，只是将数据集修改为《天龙八部》数据集，
+先进行数据集的清洗，将数据分别为`train.bin`和`val.bin`文件
+然后再congig文件中添加文件：`config/train_tianlong_char.py`
+再运行`python train.py config/train_tianlong_char.py`进行训练
+然后运行`python sample.py --out_dir=out-tianlong-char`进行抽取结果
+
+## 2训练文件参数含义与修改实验
 在 `config/train_poemtext_char.py `中，
 我们看到的参数是用于控制 GPT 模型训练的各种超参数。理解这些参数的意义，
 并通过调整它们来观察生成效果的变化，是深入掌握模型训练的关键。
