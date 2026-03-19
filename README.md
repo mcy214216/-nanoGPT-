@@ -205,7 +205,7 @@ warmup_iters = 100 # not super necessary potentially
 | `compile` | 是否使用 PyTorch 2.0 编译模型 | 布尔值。开启可提速 20~30%，但首次运行有编译开销，且可能与某些操作不兼容。 |
 
 
-## 2. 模型采样文件 `sample.py` 的推理过程
+## 3模型采样文件 `sample.py` 的推理过程
 
 `sample.py` 脚本主要负责加载训练好的 GPT 模型权重，并根据给定的起始文本（Prompt）进行自回归生成。其核心推理流程如下：
 
