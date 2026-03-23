@@ -287,3 +287,5 @@ def generate(model, idx, max_new_tokens, temperature=1.0, top_k=None):
 
 ## License
 本项目仅用于学习、研究与学术交流。
+  
+#### 给我点个小星星吧，谢谢了！
